@@ -16,6 +16,9 @@ from features.quiz_math import QuizScreen
 from features.science import ScienceScreen
 from features.placeholder import PlaceholderScreen
 from features.contact import ContactScreen
+from features.science.ecosystem import EcosystemScreen
+
+
 
 
 class SmartTableApp(App):
@@ -28,6 +31,8 @@ class SmartTableApp(App):
         sm.add_widget(NotebookScreen(name='notebook'))
         sm.add_widget(QuizScreen(name='quiz'))
         sm.add_widget(ScienceScreen(name='science'))
+        sm.add_widget(EcosystemScreen(name="ecosystem"))
+
 
         sm.add_widget(PlaceholderScreen(name='english'))
         sm.add_widget(PlaceholderScreen(name='computer'))
