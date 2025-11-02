@@ -67,7 +67,34 @@ Built using **Python + Kivy**, the system provides:
 * Arabic text reshaping
 * Custom Arabic fonts
 
+
+## 📦 Requirements
+
+To run this project, install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+````
+
+### This project uses:
+
+* `kivy`
+* `arabic-reshaper`
+* `python-bidi`
+* `pillow`
+
+These packages handle the graphical interface, Arabic text shaping/RTL support, and image rendering for the smart-table educational system.
+
 ---
+
+## ✅ Virtual Environment Setup (Recommended)
+
+```bash
+python3 -m venv smart-table-venv
+source smart-table-venv/bin/activate
+pip install -r requirements.txt
+```
+
 
 ## 🚀 Running the App
 
