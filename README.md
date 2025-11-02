@@ -1,23 +1,41 @@
-📁 Project Overview
-This project is an educational smart-table application built for kids. It runs on a Raspberry Pi and provides an Arabic-friendly learning interface with interactive lessons, activities, and a handwriting notebook. The system is fully touch-screen optimized and supports Arabic text shaping for proper display.
+Smart-Table Classroom App
 
-📂 main.py
-main.py initializes the entire application. It creates the screen manager, loads all screens (welcome page, main menu, notebook, and quiz), and starts the program in fullscreen. It controls screen transitions and serves as the app entry point.
+This project is an educational touchscreen classroom application designed for kids, developed for Raspberry Pi. The system provides a simple learning interface with subject menus, interactive quizzes, a handwriting notebook, and Arabic language support. It is optimized for fullscreen usage on a touch device and displays Arabic text correctly using reshaping and right-to-left rendering.
 
-📂 features/ui.py
-This file contains all UI helper functions used across the app. It registers the Arabic font, reshapes Arabic text, and applies right-to-left rendering so Arabic words display correctly. It also defines reusable components like Arabic labels, rounded buttons, and color buttons, and provides the main color theme for the application.
+Project Structure and File Descriptions
+main.py
 
-📂 features/main_menu.py
-This file builds the main subject-selection screen that appears after the welcome page. It displays the logo and a vertical menu of school subjects (Science, Math, English, Computer, Social Studies) along with buttons for Notebook and Contact Us. It handles screen navigation to each feature.
+This is the entry point of the application. It initializes the Kivy app, loads all screens into the ScreenManager, and starts the program in fullscreen mode. It controls navigation and launches the welcome screen, main menu, notebook, and quiz screens.
 
-📂 features/welcome_screen.py
-This file displays the first screen the user sees when launching the app. It shows the academy logo and a welcome message in Arabic, along with a start button that takes the user into the main menu.
+features/ui.py
 
-📂 features/notebook.py
-notebook.py implements a digital handwriting notebook for students. It allows drawing with a stylus or finger, erasing, changing pen size and color, scrolling through the page, clearing notes, and returning to the main menu. This is designed for practicing writing, math steps, drawing, and note-taking.
+This file contains shared UI utilities and styling functions used throughout the app. It loads and registers Arabic fonts, reshapes Arabic text for proper display, and handles right-to-left text direction. It also defines reusable UI components such as Arabic labels, rounded buttons, and color selectors.
 
-📂 features/quiz.py
-This file creates the multiple-choice quiz activity. It displays questions with four answers, tracks correct and wrong responses, updates scores live, and shows a results screen at the end. It includes Arabic text support and a button to restart the quiz or go back to the home screen.
+features/welcome_screen.py
 
-📂 features/placeholder.py
-This file is a simple screen used temporarily for features that are planned but not yet developed. It shows a title and a back button so the app flow remains complete while future lessons and activities are added.
+This file displays the first screen shown when the application starts. It shows the academy logo and a welcome message in Arabic, with a button that leads the user to the main menu.
+
+features/main_menu.py
+
+This file builds the main dashboard that contains the list of subjects and features. It displays the logo, page title, and interactive buttons for Science, Math, English, Computer, Social Studies, Notebook, and Contact Us. It handles navigation to each feature.
+
+features/notebook.py
+
+This file implements an interactive digital notebook. Users can draw with a finger or stylus, change pen color and size, erase, scroll the page vertically, and clear the notebook. It is designed for handwriting practice, solving exercises, and note-taking.
+
+features/quiz.py
+
+This file provides a multiple-choice quiz feature. It displays questions and answer buttons, checks user responses, tracks correct and incorrect answers, and shows a result screen at the end. It also supports restarting the quiz or returning to the main menu.
+
+features/placeholder.py
+
+This is a simple placeholder screen used for subjects and features that are not yet developed. It displays a temporary title message and provides a button to return to the previous screen.
+
+Environment Notes
+
+The folder smart-table-venv is the virtual environment for this project. It contains Python libraries (such as Kivy, arabic_reshaper, and bidi), and must be activated before running the app. Do not delete this folder, as it is required to run the application.
+
+To start the project:
+
+source ~/projects/smart-table-venv/bin/activate
+classroom
