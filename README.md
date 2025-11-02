@@ -1,41 +1,119 @@
-Smart-Table Classroom App
+Here is a clean, well-formatted **Markdown README** version for GitHub 👇
+Copy & paste this directly into your `README.md`
 
-This project is an educational touchscreen classroom application designed for kids, developed for Raspberry Pi. The system provides a simple learning interface with subject menus, interactive quizzes, a handwriting notebook, and Arabic language support. It is optimized for fullscreen usage on a touch device and displays Arabic text correctly using reshaping and right-to-left rendering.
+---
 
-Project Structure and File Descriptions
-main.py
+## 🧠 Smart-Table Classroom App
 
-This is the entry point of the application. It initializes the Kivy app, loads all screens into the ScreenManager, and starts the program in fullscreen mode. It controls navigation and launches the welcome screen, main menu, notebook, and quiz screens.
+An **interactive touch-screen educational application** for kids, designed for **Raspberry Pi**.
+Built using **Python + Kivy**, the system provides:
 
-features/ui.py
+✅ Touch-friendly UI
+✅ Interactive subject menu
+✅ Drawing / handwriting notebook
+✅ Quiz system
+✅ Full Arabic language support (RTL & shaping)
+✅ Fullscreen optimized for classroom tablet usage
 
-This file contains shared UI utilities and styling functions used throughout the app. It loads and registers Arabic fonts, reshapes Arabic text for proper display, and handles right-to-left text direction. It also defines reusable UI components such as Arabic labels, rounded buttons, and color selectors.
+---
 
-features/welcome_screen.py
+## 📸 Preview
 
-This file displays the first screen shown when the application starts. It shows the academy logo and a welcome message in Arabic, with a button that leads the user to the main menu.
+> (in progress)
 
-features/main_menu.py
+---
 
-This file builds the main dashboard that contains the list of subjects and features. It displays the logo, page title, and interactive buttons for Science, Math, English, Computer, Social Studies, Notebook, and Contact Us. It handles navigation to each feature.
+## 📁 Project Structure
 
-features/notebook.py
+| File / Folder                                | Description                                                       |
+| -------------------------------------------- | ----------------------------------------------------------------- |
+| `main.py`                                    | App entry point — loads screens, fullscreen setup, screen manager |
+| `features/ui.py`                             | Shared Arabic UI tools, RTL text, font loading, rounded buttons   |
+| `features/welcome_screen.py`                 | Welcome screen with logo and start button                         |
+| `features/main_menu.py`                      | Main dashboard — subject buttons + navigation                     |
+| `features/notebook.py`                       | Digital notebook — draw, erase, change color/size, clear page     |
+| `features/quiz_math.py` / `features/quiz.py` | Multiple-choice quiz system with score tracking                   |
+| `features/science.py`                        | Placeholder / coming soon (3D model planned)                      |
+| `features/placeholder.py`                    | Placeholder screen for upcoming subjects                          |
+| `smart-table-venv/`                          | Python virtual environment (Do **not** delete)                    |
 
-This file implements an interactive digital notebook. Users can draw with a finger or stylus, change pen color and size, erase, scroll the page vertically, and clear the notebook. It is designed for handwriting practice, solving exercises, and note-taking.
+---
 
-features/quiz.py
+## ✨ Features
 
-This file provides a multiple-choice quiz feature. It displays questions and answer buttons, checks user responses, tracks correct and incorrect answers, and shows a result screen at the end. It also supports restarting the quiz or returning to the main menu.
+### 📚 Subject Menu
 
-features/placeholder.py
+* Science
+* Math
+* English
+* Computer
+* Social Studies
+* Notebook
+* Contact Us
 
-This is a simple placeholder screen used for subjects and features that are not yet developed. It displays a temporary title message and provides a button to return to the previous screen.
+### ✍️ Handwriting Notebook
 
-Environment Notes
+* Finger / stylus drawing
+* Color select
+* Pen size change
+* Eraser
+* Clear page
+* Scroll to extend writing area
 
-The folder smart-table-venv is the virtual environment for this project. It contains Python libraries (such as Kivy, arabic_reshaper, and bidi), and must be activated before running the app. Do not delete this folder, as it is required to run the application.
+### 🧩 Quiz System
 
-To start the project:
+* Multiple-choice questions
+* Score tracking
+* Restart quiz or return to menu
 
+### 🌍 Arabic Support
+
+* RTL text rendering
+* Arabic text reshaping
+* Custom Arabic fonts
+
+---
+
+## 🚀 Running the App
+
+### ✅ Activate virtual environment
+
+```bash
 source ~/projects/smart-table-venv/bin/activate
+```
+
+### ✅ Run the Smart-Table app
+
+```bash
 classroom
+```
+
+> Make sure Kivy, `arabic_reshaper`, `python-bidi`, and fonts are installed inside the venv.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology             | Purpose                 |
+| ---------------------- | ----------------------- |
+| Raspberry Pi           | Hardware                |
+| Python                 | Language                |
+| Kivy                   | GUI & touch interface   |
+| arabic-reshaper & bidi | Arabic RTL text support |
+
+---
+
+## 🎯 Future Enhancements
+
+* ✅ Animated UI
+* 🎥 3D models in science section
+* 👨‍🏫 Teacher mode / admin panel
+* 🎵 Interactive learning games
+* 🧠 AI-based handwriting recognition (future)
+
+---
+
+## 🤝 Contributing
+
+Pull requests welcome!
+Report issues or suggest improvements anytime.
