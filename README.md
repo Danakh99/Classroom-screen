@@ -1,8 +1,3 @@
-Here is a clean, well-formatted **Markdown README** version for GitHub 👇
-Copy & paste this directly into your `README.md`
-
----
-
 ## 🧠 Smart-Table Classroom App
 
 An **interactive touch-screen educational application** for kids, designed for **Raspberry Pi**.
